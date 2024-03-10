@@ -78,6 +78,7 @@ public class KNNClassifier {
         return counter / test_set.size();
     }
 
+    // getting accuracy for k in range [startK; endK]
     public void getAccuracyTable(int startK, int endK) {
         for(int i = startK; i <= endK; i++) {
             System.out.println(i + "\t" + testAccuracy(i));
